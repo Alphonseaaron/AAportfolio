@@ -1,33 +1,51 @@
 
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail, Whatsapp } from "lucide-react";
+import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+  
   return (
-    <footer className="py-16 bg-secondary/30">
+    <footer className="py-16 bg-background border-t border-border/5">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-          <div className="md:col-span-2">
-            <Link to="/" className="text-2xl font-bold text-gradient">
-              Alphonse Aaron
-            </Link>
-            <p className="mt-4 max-w-md text-muted-foreground">
-              Building exceptional digital experiences with a focus on design, functionality, and security. Let's create something amazing together.
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div>
+            <Link to="/" className="text-2xl font-bold text-primary">Alphonse Aaron</Link>
+            <p className="text-muted-foreground mt-4">
+              Full-stack developer and UI/UX designer who crafts secure & user-centered digital solutions for businesses.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a 
-                href="https://github.com/Alphonseaaron" 
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-3">
+              {["Home", "About", "Projects", "Contact"].map((item) => (
+                <li key={item}>
+                  <Link 
+                    to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
+            <div className="flex space-x-2">
+              <a
+                href="https://github.com/Alphonseaaron"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
-                aria-label="Github"
+                aria-label="GitHub"
               >
                 <Github size={20} />
               </a>
               <a 
-                href="https://www.linkedin.com/in/aaronmumbo" 
+                href="https://www.linkedin.com/in/aaronmumbo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
@@ -36,89 +54,50 @@ const Footer = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:alphonsemumbo@gmail.com" 
+                href="mailto:alphonsemumbo@gmail.com"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="Email"
               >
                 <Mail size={20} />
               </a>
               <a 
-                href="https://api.whatsapp.com/send?phone=254721119332" 
+                href="https://api.whatsapp.com/send?phone=254721119332"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="WhatsApp"
               >
-                <Whatsapp size={20} />
+                <MessageSquare size={20} />
               </a>
             </div>
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/projects" className="text-muted-foreground hover:text-primary transition-colors">
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  UI/UX Design
+            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <div className="space-y-3 text-muted-foreground">
+              <p>Nairobi, Kenya</p>
+              <p>
+                <a href="mailto:alphonsemumbo@gmail.com" className="hover:text-primary transition-colors">
+                  alphonsemumbo@gmail.com
                 </a>
-              </li>
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  App Development
+              </p>
+              <p>
+                <a 
+                  href="https://api.whatsapp.com/send?phone=254721119332" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors"
+                >
+                  +254 721 119 332
                 </a>
-              </li>
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Web Development
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
-                  Cybersecurity
-                </a>
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
         </div>
         
-        <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground">
-            © {currentYear} Alphonse Aaron. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Terms of Service
-            </a>
-          </div>
+        <div className="border-t border-border/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-muted-foreground">
+          <p>&copy; {currentYear} Alphonse Aaron. All rights reserved.</p>
+          <p className="mt-4 md:mt-0">Designed & Developed with ❤️</p>
         </div>
       </div>
     </footer>

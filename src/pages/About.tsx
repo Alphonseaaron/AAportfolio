@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import GlassMorphism from '@/components/ui/GlassMorphism';
 import { Award, Book, Briefcase, GraduationCap, Heart } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   useEffect(() => {
@@ -50,13 +51,13 @@ const About = () => {
             
             <div className="flex justify-center">
               <GlassMorphism 
-                className="p-1 rounded-full overflow-hidden animate-float w-64 h-64"
+                className="p-1 rounded-full overflow-hidden animate-float w-80 h-80 sm:w-96 sm:h-96"
                 color="primary"
                 intensity="heavy"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
-                  alt="Profile" 
+                  src="/lovable-uploads/58c3c32f-e087-49e9-b7d8-8ffbdf6232ec.png" 
+                  alt="Alphonse Aaron" 
                   className="w-full h-full object-cover rounded-full"
                 />
               </GlassMorphism>
@@ -73,6 +74,9 @@ const About = () => {
                 <div className="space-y-6 text-lg">
                   <p>
                     I'm a full-stack developer and UI/UX designer with expertise in creating secure, user-centered digital solutions. My journey in tech started over 10 years ago when I built my first website, and I've been passionate about creating exceptional digital experiences ever since.
+                  </p>
+                  <p className="italic border-l-4 border-primary pl-4 py-2">
+                    "A jack of all trades is a master of none, but often times better than a master of one."
                   </p>
                   <p>
                     My approach combines aesthetic design with robust functionality, always keeping the end-user in mind. I believe that the best digital products are not just visually appealing but also intuitive, secure, and performant.
@@ -191,31 +195,42 @@ const About = () => {
                   <div className="space-y-8">
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">Master's in Cybersecurity</h4>
-                      <p className="text-primary font-medium">Tech University | 2018 - 2020</p>
+                      <h4 className="font-bold">Computer Science and Cybersecurity</h4>
+                      <p className="text-primary font-medium">2019 - 2021</p>
                       <p className="text-muted-foreground mt-2">
-                        Specialized in application security, network protection, and security best practices for web and mobile applications.
+                        Skills: InVision · Customer Experience · Python (Programming Language)
                       </p>
                     </div>
                     
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">BSc Computer Science</h4>
-                      <p className="text-primary font-medium">State University | 2013 - 2017</p>
-                      <p className="text-muted-foreground mt-2">
-                        Core focus on software engineering, algorithms, and database systems. Minor in Human-Computer Interaction.
-                      </p>
-                    </div>
-                    
-                    <div className="relative pl-8 border-l-2 border-primary/30">
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">Professional Certifications</h4>
-                      <p className="text-primary font-medium">Various | 2015 - Present</p>
-                      <ul className="text-muted-foreground mt-2 space-y-1">
-                        <li>• AWS Certified Solutions Architect</li>
-                        <li>• Google UX Design Professional</li>
-                        <li>• Certified Information Systems Security Professional (CISSP)</li>
-                        <li>• Flutter Development Bootcamp</li>
+                      <h4 className="font-bold">freeCodeCamp Certifications</h4>
+                      <p className="text-primary font-medium">2020 - 2021</p>
+                      <ul className="text-muted-foreground mt-2 space-y-3">
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>Data Visualization</strong> (Jul 2021)<br />
+                          Skills: Python, Customer Experience, InVision
+                        </li>
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>Legacy Data Visualization</strong> (Jul 2021)<br />
+                          Skills: Python, Customer Experience, InVision
+                        </li>
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>Legacy Front End</strong> (Jul 2021)<br />
+                          Skills: Python, Customer Experience, InVision
+                        </li>
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>Front End Libraries</strong> (Jan 2021)<br />
+                          Skills: Python, Customer Experience
+                        </li>
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>JavaScript Algorithms and Data Structures</strong> (Jan 2021)<br />
+                          Skills: Python
+                        </li>
+                        <li className="border-l-2 border-primary/30 pl-4 py-1">
+                          <strong>Responsive Web Design</strong> (Sep 2020)<br />
+                          Skills: Python, Customer Experience, InVision
+                        </li>
                       </ul>
                     </div>
                   </div>
