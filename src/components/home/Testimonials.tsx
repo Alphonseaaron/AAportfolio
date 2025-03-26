@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import GlassMorphism from "../ui/GlassMorphism";
@@ -15,35 +14,35 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    role: "CTO",
-    company: "FinTech Solutions",
+    name: "Kamau Mwangi",
+    role: "CEO",
+    company: "TechFlow Solutions",
     content: "Working with this developer on our e-wallet system was exceptional. Their attention to security details and user experience transformed our product. The AI-driven fraud detection they implemented has significantly reduced financial risks for our company.",
-    avatar: "https://randomuser.me/api/portraits/women/1.jpg"
+    avatar: "https://randomuser.me/api/portraits/men/42.jpg"
   },
   {
     id: 2,
-    name: "Michael Chen",
-    role: "Property Manager",
+    name: "Wanjiku Njeri",
+    role: "Product Manager",
     company: "Urban Living Rentals",
     content: "The rental management platform developed for us has completely transformed how we operate. Automating our rent collection process alone has saved countless hours of administrative work, and our tenants love the easy-to-use interface.",
-    avatar: "https://randomuser.me/api/portraits/men/46.jpg"
+    avatar: "https://randomuser.me/api/portraits/women/40.jpg"
   },
   {
     id: 3,
-    name: "David Omondi",
-    role: "CEO",
+    name: "Odhiambo Otieno",
+    role: "Director",
     company: "ConnectNet ISP",
     content: "The billing system created for our internet service has increased our revenue by over 50%. The security measures implemented have effectively eliminated unauthorized access issues we were facing. Highly recommend for ISP solutions!",
-    avatar: "https://randomuser.me/api/portraits/men/22.jpg"
+    avatar: "https://randomuser.me/api/portraits/men/53.jpg"
   },
   {
     id: 4,
-    name: "Jessica Reynolds",
-    role: "Product Owner",
+    name: "Akinyi Adhiambo",
+    role: "Founder",
     company: "ChessVS Gaming",
     content: "The chess betting app exceeded our expectations. From real-time data tracking to secure payment processing, every aspect was thoughtfully designed. User engagement metrics have been outstanding since launch.",
-    avatar: "https://randomuser.me/api/portraits/women/23.jpg"
+    avatar: "https://randomuser.me/api/portraits/women/32.jpg"
   }
 ];
 

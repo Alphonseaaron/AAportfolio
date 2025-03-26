@@ -1,14 +1,11 @@
-
 import { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import GlassMorphism from '@/components/ui/GlassMorphism';
 import { Award, Book, Briefcase, GraduationCap, Heart } from 'lucide-react';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   useEffect(() => {
-    // Initialize animation on scroll
     const animateScrollElements = () => {
       const elements = document.querySelectorAll('.animate-on-scroll');
       
@@ -152,28 +149,28 @@ const About = () => {
                   <div className="space-y-8">
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">Senior Full-Stack Developer</h4>
-                      <p className="text-primary font-medium">Tech Innovations Inc. | 2020 - Present</p>
+                      <h4 className="font-bold">Fintech E-Wallet System</h4>
+                      <p className="text-primary font-medium">Lead Developer | 2022 - Present</p>
                       <p className="text-muted-foreground mt-2">
-                        Lead developer for fintech and e-commerce projects, specializing in secure payment integrations and user experience optimization.
+                        Developed a secure e-wallet system with mobile money integration, implementing AI-driven fraud detection and reducing fraudulent transactions by 60%.
                       </p>
                     </div>
                     
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">UI/UX Designer & Developer</h4>
-                      <p className="text-primary font-medium">Digital Creations Ltd. | 2017 - 2020</p>
+                      <h4 className="font-bold">Real Estate Rental Platform</h4>
+                      <p className="text-primary font-medium">Full-Stack Developer | 2021 - 2022</p>
                       <p className="text-muted-foreground mt-2">
-                        Designed and implemented user interfaces for web and mobile applications, focusing on accessibility and conversion optimization.
+                        Built a comprehensive rental management platform that reduced vacant unit downtime by 30% and streamlined maintenance request resolution by 40%.
                       </p>
                     </div>
                     
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">Web Developer</h4>
-                      <p className="text-primary font-medium">WebSolutions Agency | 2015 - 2017</p>
+                      <h4 className="font-bold">ISP Billing System</h4>
+                      <p className="text-primary font-medium">Lead Developer | 2020 - 2021</p>
                       <p className="text-muted-foreground mt-2">
-                        Developed responsive websites for clients across various industries, implementing SEO best practices and performance optimizations.
+                        Created an automated billing system for ISPs that increased revenue by 50% and reduced unauthorized access by 70% through robust security measures.
                       </p>
                     </div>
                   </div>
@@ -193,15 +190,6 @@ const About = () => {
                   </div>
                   
                   <div className="space-y-8">
-                    <div className="relative pl-8 border-l-2 border-primary/30">
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
-                      <h4 className="font-bold">Computer Science and Cybersecurity</h4>
-                      <p className="text-primary font-medium">2019 - 2021</p>
-                      <p className="text-muted-foreground mt-2">
-                        Skills: InVision · Customer Experience · Python (Programming Language)
-                      </p>
-                    </div>
-                    
                     <div className="relative pl-8 border-l-2 border-primary/30">
                       <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary"></div>
                       <h4 className="font-bold">freeCodeCamp Certifications</h4>
