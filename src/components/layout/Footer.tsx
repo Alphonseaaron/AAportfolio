@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Whatsapp } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -49,7 +49,7 @@ const Footer = () => {
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="WhatsApp"
               >
-                <Phone size={20} />
+                <Whatsapp size={20} />
               </a>
             </div>
           </div>

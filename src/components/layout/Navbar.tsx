@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Whatsapp } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,8 +61,9 @@ const Navbar = () => {
             href="https://api.whatsapp.com/send?phone=254721119332"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors"
+            className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors flex items-center gap-2"
           >
+            <Whatsapp size={18} />
             Hire Me
           </a>
         </div>
@@ -95,9 +96,10 @@ const Navbar = () => {
             href="https://api.whatsapp.com/send?phone=254721119332"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors text-center"
+            className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors text-center flex items-center justify-center gap-2"
             onClick={() => setIsMenuOpen(false)}
           >
+            <Whatsapp size={18} />
             Hire Me
           </a>
         </div>
