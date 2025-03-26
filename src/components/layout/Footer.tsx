@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,39 +11,45 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
             <Link to="/" className="text-2xl font-bold text-gradient">
-              Portfolio.
+              Alphonse Aaron
             </Link>
             <p className="mt-4 max-w-md text-muted-foreground">
               Building exceptional digital experiences with a focus on design, functionality, and security. Let's create something amazing together.
             </p>
             <div className="flex space-x-4 mt-6">
               <a 
-                href="#" 
+                href="https://github.com/Alphonseaaron" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="Github"
               >
                 <Github size={20} />
               </a>
               <a 
-                href="#" 
-                className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
-              </a>
-              <a 
-                href="#" 
+                href="https://www.linkedin.com/in/aaronmumbo" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:contact@example.com" 
+                href="mailto:alphonsemumbo@gmail.com" 
                 className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
                 aria-label="Email"
               >
                 <Mail size={20} />
+              </a>
+              <a 
+                href="https://api.whatsapp.com/send?phone=254721119332" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary/10 text-primary hover:bg-primary hover:text-white p-2 rounded-full transition-colors"
+                aria-label="WhatsApp"
+              >
+                <Phone size={20} />
               </a>
             </div>
           </div>
@@ -103,7 +109,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground">
-            © {currentYear} Portfolio. All rights reserved.
+            © {currentYear} Alphonse Aaron. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

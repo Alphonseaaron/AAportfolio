@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { ArrowDown, Code, MonitorSmartphone, PaintBucket, Shield } from "lucide-react";
 import GlassMorphism from "../ui/GlassMorphism";
 import AnimatedText from "../ui/AnimatedText";
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 const Hero = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -53,10 +54,10 @@ const Hero = () => {
                 className="block"
               />
               <AnimatedText
-                text={<span className="text-gradient">Precision & Passion</span>}
+                text="Precision & Passion"
                 animation="slide-up"
                 delay={300}
-                className="block"
+                className="block text-gradient"
               />
             </h1>
             
@@ -68,27 +69,13 @@ const Hero = () => {
             />
             
             <div className="flex flex-wrap gap-4">
-              <AnimatedText
-                animation="slide-up"
-                delay={700}
-                className="w-auto"
-                text={
-                  <a href="#projects" className="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all">
-                    View Projects
-                  </a>
-                }
-              />
+              <a href="#projects" className="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all animate-slide-up" style={{ animationDelay: "700ms" }}>
+                View Projects
+              </a>
               
-              <AnimatedText
-                animation="slide-up"
-                delay={800}
-                className="w-auto"
-                text={
-                  <a href="#contact" className="inline-block border border-primary/50 text-primary px-8 py-3 rounded-full hover:bg-primary/5 transition-all">
-                    Contact Me
-                  </a>
-                }
-              />
+              <a href="#contact" className="inline-block border border-primary/50 text-primary px-8 py-3 rounded-full hover:bg-primary/5 transition-all animate-slide-up" style={{ animationDelay: "800ms" }}>
+                Contact Me
+              </a>
             </div>
           </div>
           
@@ -113,9 +100,10 @@ const Hero = () => {
                     <Shield size={24} />
                   </div>
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center shadow-lg">
-                      <span className="text-4xl font-bold text-gradient">ME</span>
-                    </div>
+                    <Avatar className="w-44 h-44 shadow-lg">
+                      <AvatarImage src="/lovable-uploads/ac963a23-dc31-4c9e-a653-80a42ae0d4c0.png" alt="Alphonse Aaron" />
+                      <AvatarFallback className="text-4xl font-bold text-gradient">AA</AvatarFallback>
+                    </Avatar>
                   </div>
                 </div>
               </GlassMorphism>

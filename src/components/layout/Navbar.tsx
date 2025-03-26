@@ -42,7 +42,7 @@ const Navbar = () => {
     >
       <nav className="container mx-auto px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <span className="text-2xl font-bold text-gradient">Portfolio.</span>
+          <span className="text-2xl font-bold text-gradient">Alphonse Aaron</span>
         </Link>
         
         {/* Desktop Menu */}
@@ -58,7 +58,9 @@ const Navbar = () => {
           ))}
           
           <a
-            href="#contact"
+            href="https://api.whatsapp.com/send?phone=254721119332"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors"
           >
             Hire Me
@@ -90,7 +92,9 @@ const Navbar = () => {
           ))}
           
           <a
-            href="#contact"
+            href="https://api.whatsapp.com/send?phone=254721119332"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors text-center"
             onClick={() => setIsMenuOpen(false)}
           >
