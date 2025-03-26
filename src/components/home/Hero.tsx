@@ -90,7 +90,7 @@ const Hero = () => {
                 color="primary"
               >
                 <img 
-                  src="/lovable-uploads/58c3c32f-e087-49e9-b7d8-8ffbdf6232ec.png"
+                  src="https://images.pexels.com/photos/31348833/pexels-photo-31348833.jpeg"
                   alt="Alphonse Aaron"
                   className="w-full h-full object-cover"
                 />
