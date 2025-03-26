@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     role: "CEO",
     company: "TechFlow Solutions",
     content: "Working with this developer on our e-wallet system was exceptional. Their attention to security details and user experience transformed our product. The AI-driven fraud detection they implemented has significantly reduced financial risks for our company.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16b?w=400&h=400&fit=crop"
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const testimonials: Testimonial[] = [
     role: "Product Manager",
     company: "Urban Living Rentals",
     content: "The rental management platform developed for us has completely transformed how we operate. Automating our rent collection process alone has saved countless hours of administrative work, and our tenants love the easy-to-use interface.",
-    avatar: "https://randomuser.me/api/portraits/women/33.jpg"
+    avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop"
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     role: "Director",
     company: "ConnectNet ISP",
     content: "The billing system created for our internet service has increased our revenue by over 50%. The security measures implemented have effectively eliminated unauthorized access issues we were facing. Highly recommend for ISP solutions!",
-    avatar: "https://randomuser.me/api/portraits/men/77.jpg"
+    avatar: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=400&fit=crop"
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const testimonials: Testimonial[] = [
     role: "Founder",
     company: "ChessVS Gaming",
     content: "The chess betting app exceeded our expectations. From real-time data tracking to secure payment processing, every aspect was thoughtfully designed. User engagement metrics have been outstanding since launch.",
-    avatar: "https://randomuser.me/api/portraits/women/29.jpg"
+    avatar: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=400&h=400&fit=crop"
   }
 ];
 
