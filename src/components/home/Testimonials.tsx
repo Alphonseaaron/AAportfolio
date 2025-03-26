@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     role: "CEO",
     company: "TechFlow Solutions",
     content: "Working with this developer on our e-wallet system was exceptional. Their attention to security details and user experience transformed our product. The AI-driven fraud detection they implemented has significantly reduced financial risks for our company.",
-    avatar: "https://images.unsplash.com/photo-1539701938214-0d9736e1c16b?w=400&h=400&fit=crop"
+    avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=400&h=400&fit=crop"
   },
   {
     id: 2,
