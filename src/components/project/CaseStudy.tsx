@@ -1,4 +1,3 @@
-
 import { ArrowLeft, ArrowRight, CheckCircle, ExternalLink, XCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import GlassMorphism from "../ui/GlassMorphism";
@@ -28,8 +27,7 @@ const CaseStudy = ({ project }: CaseStudyProps) => {
     heroImage,
     challenges,
     solutions,
-    results,
-    screenshots
+    results
   } = project;
   
   return (
@@ -121,29 +119,6 @@ const CaseStudy = ({ project }: CaseStudyProps) => {
                 ))}
               </ul>
             </GlassMorphism>
-            
-            <h3 className="text-2xl font-bold mb-6">Project Gallery</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {screenshots.map((screenshot, index) => (
-                <div key={index} className="animate-on-scroll">
-                  <GlassMorphism 
-                    className="overflow-hidden rounded-xl"
-                    hoverable
-                  >
-                    <div className="aspect-video overflow-hidden">
-                      <img 
-                        src={screenshot.url} 
-                        alt={screenshot.caption} 
-                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <p className="text-sm text-muted-foreground">{screenshot.caption}</p>
-                    </div>
-                  </GlassMorphism>
-                </div>
-              ))}
-            </div>
           </div>
           
           <div>

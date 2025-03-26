@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { ArrowDown, Code, MonitorSmartphone, PaintBucket, Shield } from "lucide-react";
 import GlassMorphism from "../ui/GlassMorphism";
@@ -86,30 +85,15 @@ const Hero = () => {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative animate-float">
               <GlassMorphism 
-                className="w-full max-w-xl aspect-square rounded-2xl flex items-center justify-center overflow-hidden"
+                className="w-full max-w-2xl aspect-square rounded-2xl flex items-center justify-center overflow-hidden"
                 intensity="heavy"
                 color="primary"
               >
-                <div className="relative w-full h-full p-6">
-                  <div className="absolute top-6 left-6 bg-primary text-white p-3 rounded-2xl animate-pulse-slow">
-                    <PaintBucket size={24} />
-                  </div>
-                  <div className="absolute top-6 right-6 bg-blue-400 text-white p-3 rounded-2xl animate-pulse-slow" style={{ animationDelay: "1s" }}>
-                    <Code size={24} />
-                  </div>
-                  <div className="absolute bottom-6 left-6 bg-indigo-500 text-white p-3 rounded-2xl animate-pulse-slow" style={{ animationDelay: "1.5s" }}>
-                    <MonitorSmartphone size={24} />
-                  </div>
-                  <div className="absolute bottom-6 right-6 bg-red-500 text-white p-3 rounded-2xl animate-pulse-slow" style={{ animationDelay: "2s" }}>
-                    <Shield size={24} />
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Avatar className="w-64 h-64 shadow-lg">
-                      <AvatarImage src="/lovable-uploads/ac963a23-dc31-4c9e-a653-80a42ae0d4c0.png" alt="Alphonse Aaron" />
-                      <AvatarFallback className="text-4xl font-bold text-gradient">AA</AvatarFallback>
-                    </Avatar>
-                  </div>
-                </div>
+                <img 
+                  src="/lovable-uploads/58c3c32f-e087-49e9-b7d8-8ffbdf6232ec.png"
+                  alt="Alphonse Aaron"
+                  className="w-full h-full object-cover"
+                />
               </GlassMorphism>
             </div>
           </div>
