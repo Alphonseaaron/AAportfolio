@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, MessageSquare } from "lucide-react";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,16 +63,19 @@ const Navbar = () => {
             ))}
           </nav>
           
-          {/* CTA */}
-          <a
-            href="https://api.whatsapp.com/send?phone=254721119332"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors items-center gap-2"
-          >
-            <MessageSquare size={18} />
-            Hire Me
-          </a>
+          {/* Actions */}
+          <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
+            <a
+              href="https://api.whatsapp.com/send?phone=254721119332"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors items-center gap-2"
+            >
+              <MessageSquare size={18} />
+              Hire Me
+            </a>
+          </div>
           
           {/* Mobile Menu Button */}
           <button 
@@ -111,16 +114,19 @@ const Navbar = () => {
               </Link>
             ))}
             
-            <a
-              href="https://api.whatsapp.com/send?phone=254721119332"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors text-center flex items-center justify-center gap-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <MessageSquare size={18} />
-              Hire Me
-            </a>
+            <div className="flex items-center gap-4 pt-4 border-t border-border/10">
+              <ThemeToggle />
+              <a
+                href="https://api.whatsapp.com/send?phone=254721119332"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition-colors text-center flex items-center justify-center gap-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <MessageSquare size={18} />
+                Hire Me
+              </a>
+            </div>
           </nav>
         </div>
       </div>
