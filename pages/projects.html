@@ -113,104 +113,109 @@
     }
   ];
   
-  // Setup projects filter and grid
-  function setupProjects() {
-    const filterContainer = document.getElementById('projects-filter');
-    const projectsContainer = document.getElementById('projects-grid');
-    
-    // Get unique categories
-    const categories = ["All", ...new Set(projects.map(project => project.category))];
-    
-    // Add filter buttons
-    categories.forEach(category => {
-      const button = document.createElement('button');
-      button.className = category === "All" 
-        ? "px-4 py-2 rounded-full bg-primary text-white transition-all duration-300" 
-        : "px-4 py-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300";
-      button.textContent = category;
-      button.addEventListener('click', () => filterProjects(category));
-      filterContainer.appendChild(button);
-    });
-    
-    // Add projects
-    renderProjects(projects);
-  }
-  
-  function renderProjects(projectsToRender) {
-    const projectsContainer = document.getElementById('projects-grid');
-    projectsContainer.innerHTML = '';
-    
-    projectsToRender.forEach((project, index) => {
-      const projectCard = document.createElement('div');
-      projectCard.className = 'animate-on-scroll';
-      projectCard.style.animationDelay = `${index * 100}ms`;
-      
-      projectCard.innerHTML = `
-        <div class="glass overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          <div class="relative h-48 overflow-hidden">
+  // Function to create project cards
+  function createProjectCard(project, index) {
+    return `
+      <div class="group animate-on-scroll" style="animation-delay: ${index * 100}ms">
+        <div class="glass overflow-hidden rounded-xl hoverable">
+          <div class="relative aspect-video overflow-hidden">
             <img 
               src="${project.image}" 
               alt="${project.title}" 
-              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80"></div>
             <div class="absolute top-4 left-4">
-              <span class="bg-black/30 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs">
+              <span class="bg-primary/80 text-white text-xs font-medium px-3 py-1 rounded-full">
                 ${project.category}
               </span>
             </div>
           </div>
           
           <div class="p-6">
-            <h3 class="font-bold text-xl mb-2">${project.title}</h3>
-            <p class="text-muted mb-4">${project.description}</p>
+            <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+            <p class="text-muted mb-4 line-clamp-2">${project.description}</p>
             
-            <div class="flex flex-wrap gap-2 mb-4">
-              ${project.skills.map(skill => `
-                <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">
-                  ${skill}
-                </span>
+            <div class="flex flex-wrap gap-2 mb-6">
+              ${project.skills.slice(0, 3).map(skill => `
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">${skill}</span>
               `).join('')}
+              ${project.skills.length > 3 ? `
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">
+                  +${project.skills.length - 3} more
+                </span>
+              ` : ''}
             </div>
             
-            <a 
-              href="/project/${project.id}" 
-              onclick="navigateTo('/project/${project.id}'); return false;" 
-              class="text-primary font-medium hover:underline flex items-center"
-            >
-              View Case Study
-              <i class="lucide-arrow-right ml-1"></i>
-            </a>
+            <div class="flex justify-between items-center">
+              <a 
+                href="/project/${project.id}" 
+                onclick="navigateTo('/project/${project.id}'); return false;" 
+                class="flex items-center text-primary group-hover:underline"
+              >
+                View Case Study
+                <i class="lucide-arrow-right ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+              </a>
+            </div>
           </div>
         </div>
-      `;
-      
-      projectsContainer.appendChild(projectCard);
-    });
+      </div>
+    `;
+  }
+  
+  // Function to create filter buttons
+  function createFilterButtons(projects) {
+    const categories = ["All", ...Array.from(new Set(projects.map(project => project.category)))];
+    const filterHTML = categories.map(category => `
+      <button 
+        class="filter-btn ${category === 'All' ? 'bg-primary text-white' : 'bg-white/50 hover:bg-white/80'} px-4 py-2 rounded-full transition-all duration-300"
+        data-category="${category}"
+      >
+        ${category}
+      </button>
+    `).join('');
     
+    document.getElementById('projects-filter').innerHTML = filterHTML;
+    
+    // Add event listeners to filter buttons
+    document.querySelectorAll('.filter-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active state
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+          btn.classList.remove('bg-primary', 'text-white');
+          btn.classList.add('bg-white/50', 'hover:bg-white/80');
+        });
+        button.classList.remove('bg-white/50', 'hover:bg-white/80');
+        button.classList.add('bg-primary', 'text-white');
+        
+        // Filter projects
+        const category = button.dataset.category;
+        filterProjects(category);
+      });
+    });
+  }
+  
+  // Function to filter projects
+  function filterProjects(category) {
+    const filteredProjects = category === 'All' 
+      ? projects 
+      : projects.filter(project => project.category === category);
+      
+    // Render filtered projects
+    document.getElementById('projects-grid').innerHTML = filteredProjects
+      .map((project, index) => createProjectCard(project, index))
+      .join('');
+      
     // Re-initialize animations
     initializeAnimations();
   }
   
-  function filterProjects(category) {
-    // Update active filter button
-    const filterButtons = document.querySelectorAll('#projects-filter button');
-    filterButtons.forEach(button => {
-      if (button.textContent === category) {
-        button.className = "px-4 py-2 rounded-full bg-primary text-white transition-all duration-300";
-      } else {
-        button.className = "px-4 py-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300";
-      }
-    });
-    
-    // Filter projects
-    if (category === "All") {
-      renderProjects(projects);
-    } else {
-      const filteredProjects = projects.filter(project => project.category === category);
-      renderProjects(filteredProjects);
-    }
+  // Initialize the page
+  function initializeProjectsPage() {
+    createFilterButtons(projects);
+    filterProjects('All');
   }
   
-  // Initialize projects
-  setupProjects();
+  // Run initialization
+  initializeProjectsPage();
 </script>

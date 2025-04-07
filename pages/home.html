@@ -1,680 +1,553 @@
 
-<!-- Hero Section -->
-<section class="min-h-screen flex flex-col justify-center pt-24 pb-16 relative overflow-hidden">
-  <!-- Gradient orbs -->
-  <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full custom-blur animate-pulse-slow"></div>
-  <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-400/20 rounded-full custom-blur animate-pulse-slow" style="animation-delay: 1.5s"></div>
-  
-  <div class="container relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="order-2 lg:order-1">
-        <div class="inline-block mb-2 animate-fade-in">
-          <div class="glass px-4 py-1 rounded-full">
-            <span class="text-sm font-medium">
-              Full-stack Developer & UI/UX Designer
-            </span>
-          </div>
-        </div>
-        
-        <h1 class="mb-6 leading-tight">
-          <span class="block animate-slide-up delay-100">Crafting Digital</span>
-          <span class="block animate-slide-up delay-200">Experiences with</span>
-          <span class="block text-gradient animate-slide-up delay-300">Precision & Passion</span>
-        </h1>
-        
-        <p class="text-lg text-muted mb-8 max-w-xl animate-fade-in delay-500">
-          I design and develop exceptional digital experiences that are secure, beautiful, and user-centered. From mobile apps to websites and custom software solutions.
-        </p>
-        
-        <p class="text-lg italic text-muted mb-8 border-l-4 border-primary pl-4 py-2">
-          "A jack of all trades is a master of none, but often times better than a master of one."
-        </p>
-        
-        <div class="flex flex-wrap gap-4">
-          <a href="#projects" class="btn btn-primary animate-slide-up" style="animation-delay: 700ms">
-            View Projects
-          </a>
-          
-          <a href="#contact" class="btn btn-outline animate-slide-up" style="animation-delay: 800ms">
-            Contact Me
-          </a>
-        </div>
-      </div>
-      
-      <div class="order-1 lg:order-2 flex justify-center">
-        <div class="relative animate-float">
-          <div class="glass w-full max-w-2xl aspect-square rounded-2xl flex items-center justify-center overflow-hidden">
-            <img 
-              src="https://images.pexels.com/photos/31348833/pexels-photo-31348833.jpeg"
-              alt="Alphonse Aaron"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-opacity duration-500" id="scroll-indicator">
-    <div class="animate-bounce">
-      <i class="lucide-arrow-down text-primary" style="font-size: 32px"></i>
-    </div>
-  </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="py-20">
-  <div class="container">
-    <div class="text-center mb-12">
-      <p class="text-primary font-medium mb-3 animate-fade-in">EXPERTISE</p>
-      <h2 class="section-heading inline-block mb-6 animate-slide-up">Services</h2>
-      <p class="text-muted mb-8 max-w-2xl mx-auto animate-fade-in">
-        Comprehensive digital solutions tailored to your needs. From concept to deployment, I handle all aspects of the development lifecycle.
-      </p>
-    </div>
+<main>
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col justify-center relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full custom-blur animate-pulse-slow"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-400/20 rounded-full custom-blur animate-pulse-slow" style="animation-delay: 1.5s"></div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="animate-on-scroll">
-        <div class="glass p-6 rounded-xl h-full flex flex-col text-center">
-          <div class="flex justify-center mb-4">
-            <i class="lucide-layout text-primary" style="font-size: 48px"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
-          <p class="text-muted">Creating intuitive, visually appealing interfaces that enhance user experience and drive engagement.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll">
-        <div class="glass p-6 rounded-xl h-full flex flex-col text-center">
-          <div class="flex justify-center mb-4">
-            <i class="lucide-smartphone text-primary" style="font-size: 48px"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">App Development</h3>
-          <p class="text-muted">Building cross-platform mobile applications with Flutter and native technologies for iOS and Android.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll">
-        <div class="glass p-6 rounded-xl h-full flex flex-col text-center">
-          <div class="flex justify-center mb-4">
-            <i class="lucide-code text-primary" style="font-size: 48px"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Web Development</h3>
-          <p class="text-muted">Developing responsive, performant websites and web applications with modern technologies and frameworks.</p>
-        </div>
-      </div>
-      
-      <div class="animate-on-scroll">
-        <div class="glass p-6 rounded-xl h-full flex flex-col text-center">
-          <div class="flex justify-center mb-4">
-            <i class="lucide-shield text-primary" style="font-size: 48px"></i>
-          </div>
-          <h3 class="text-xl font-bold mb-3">Cybersecurity</h3>
-          <p class="text-muted">Implementing robust security measures to protect digital assets, data, and user privacy across platforms.</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="mt-16 pt-8 border-t border-border/30">
+    <div class="container mx-auto px-6 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="animate-on-scroll">
-          <div class="glass p-8 rounded-xl">
-            <h3 class="text-2xl font-bold mb-4">My Development Approach</h3>
-            <ul class="space-y-4">
-              <li class="flex items-start">
-                <div class="bg-primary rounded-full p-1 mr-3 mt-1">
-                  <i class="lucide-check text-white" style="font-size: 12px"></i>
-                </div>
-                <div>
-                  <strong class="font-medium">User-Centered Design:</strong>
-                  <p class="text-muted mt-1">
-                    Focusing on real user needs and behaviors to create intuitive and accessible interfaces.
-                  </p>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <div class="bg-primary rounded-full p-1 mr-3 mt-1">
-                  <i class="lucide-check text-white" style="font-size: 12px"></i>
-                </div>
-                <div>
-                  <strong class="font-medium">Security First:</strong>
-                  <p class="text-muted mt-1">
-                    Building security into every layer of the application from the ground up, not as an afterthought.
-                  </p>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <div class="bg-primary rounded-full p-1 mr-3 mt-1">
-                  <i class="lucide-check text-white" style="font-size: 12px"></i>
-                </div>
-                <div>
-                  <strong class="font-medium">Iterative Development:</strong>
-                  <p class="text-muted mt-1">
-                    Using agile methodologies to deliver incremental value and adapt to changing requirements.
-                  </p>
-                </div>
-              </li>
-              <li class="flex items-start">
-                <div class="bg-primary rounded-full p-1 mr-3 mt-1">
-                  <i class="lucide-check text-white" style="font-size: 12px"></i>
-                </div>
-                <div>
-                  <strong class="font-medium">Performance Optimization:</strong>
-                  <p class="text-muted mt-1">
-                    Creating fast, responsive applications that provide an excellent user experience on all devices.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="animate-on-scroll">
-          <h3 class="text-2xl font-bold mb-6">Technologies I Work With</h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Flutter & Dart
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              React & Next.js
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Node.js
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Firebase
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Tailwind CSS
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              TypeScript
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              REST APIs
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              MongoDB
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              SQL Databases
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              AWS
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Payment Gateways
-            </div>
-            <div class="bg-secondary rounded-lg p-3 text-center transition-all duration-300 hover:bg-primary/10 hover:scale-105">
-              Cybersecurity Tools
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects Section -->
-<section id="projects" class="py-20 bg-secondary/30">
-  <div class="container">
-    <div class="text-center mb-12">
-      <p class="text-primary font-medium mb-3 animate-fade-in">FEATURED WORK</p>
-      <h2 class="section-heading inline-block mb-6 animate-slide-up">Case Studies</h2>
-      <p class="text-muted mb-8 max-w-2xl mx-auto animate-fade-in">
-        Explore a selection of my recent projects showcasing design, development, and cybersecurity expertise. Each project represents a unique challenge solved with innovative solutions.
-      </p>
-    </div>
-    
-    <div id="projects-filter" class="flex flex-wrap justify-center gap-3 mb-12">
-      <!-- Project filter buttons will be dynamically added here -->
-    </div>
-    
-    <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project cards will be dynamically added here -->
-    </div>
-    
-    <div class="text-center mt-12">
-      <a href="/projects" onclick="navigateTo('/projects'); return false;" class="btn btn-outline">
-        View All Projects
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="py-20 bg-secondary/30">
-  <div class="container">
-    <div class="text-center mb-12">
-      <p class="text-primary font-medium mb-3 animate-fade-in">TESTIMONIALS</p>
-      <h2 class="section-heading inline-block mb-6 animate-slide-up">Client Feedback</h2>
-      <p class="text-muted mb-8 max-w-2xl mx-auto animate-fade-in">
-        Don't just take my word for it. Here's what clients have to say about working with me and the results we've achieved together.
-      </p>
-    </div>
-    
-    <div class="max-w-4xl mx-auto" x-data="{ currentTestimonial: 0 }">
-      <div class="glass p-8 rounded-2xl relative mb-12">
-        <i class="lucide-quote text-primary/10 absolute -top-6 -left-6" style="font-size: 96px"></i>
-        
-        <template x-for="(testimonial, index) in testimonials" :key="testimonial.id">
-          <div x-show="currentTestimonial === index" class="grid grid-cols-1 md:grid-cols-4 gap-6 items-center">
-            <div class="md:col-span-1 flex justify-center">
-              <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-white/30">
-                <img 
-                  :src="testimonial.avatar" 
-                  :alt="testimonial.name" 
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-            
-            <div class="md:col-span-3">
-              <p class="text-lg mb-4 italic relative z-10" x-text="'\"' + testimonial.content + '\"'"></p>
-              <h4 class="font-bold" x-text="testimonial.name"></h4>
-              <p class="text-muted" x-text="testimonial.role + ', ' + testimonial.company"></p>
-            </div>
-          </div>
-        </template>
-      </div>
-      
-      <div class="flex justify-center space-x-4">
-        <button 
-          @click="currentTestimonial = currentTestimonial === 0 ? testimonials.length - 1 : currentTestimonial - 1"
-          class="p-2 rounded-full bg-white/50 hover:bg-primary hover:text-white transition-colors"
-        >
-          <i class="lucide-chevron-left"></i>
-        </button>
-        
-        <div class="flex space-x-2">
-          <template x-for="(testimonial, index) in testimonials" :key="testimonial.id">
-            <button
-              @click="currentTestimonial = index"
-              class="w-3 h-3 rounded-full transition-all"
-              :class="currentTestimonial === index ? 'bg-primary scale-125' : 'bg-gray-300'"
-            ></button>
-          </template>
-        </div>
-        
-        <button 
-          @click="currentTestimonial = (currentTestimonial + 1) % testimonials.length"
-          class="p-2 rounded-full bg-white/50 hover:bg-primary hover:text-white transition-colors"
-        >
-          <i class="lucide-chevron-right"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-20">
-  <div class="container">
-    <div class="text-center mb-12">
-      <p class="text-primary font-medium mb-3 animate-fade-in">GET IN TOUCH</p>
-      <h2 class="section-heading inline-block mb-6 animate-slide-up">Contact Me</h2>
-      <p class="text-muted mb-8 max-w-2xl mx-auto animate-fade-in">
-        Have a project in mind or want to discuss a potential collaboration? I'd love to hear from you. Feel free to reach out using the form below.
-      </p>
-    </div>
-    
-    <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
-      <div class="lg:col-span-2 animate-on-scroll">
-        <div class="glass p-8 rounded-xl h-full flex flex-col justify-between">
-          <div>
-            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-            <p class="text-muted mb-8">
-              Feel free to reach out through any of these channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-            </p>
-            
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                  <i class="lucide-mail text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-medium">Email</h4>
-                  <a href="mailto:alphonsemumbo@gmail.com" class="text-muted hover:text-primary">
-                    alphonsemumbo@gmail.com
-                  </a>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
-                <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                  <i class="lucide-message-square text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-medium">WhatsApp</h4>
-                  <a href="https://api.whatsapp.com/send?phone=254721119332" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary">
-                    +254 721 119 332
-                  </a>
-                </div>
-              </div>
-              
-              <div class="flex items-start">
-                <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                  <i class="lucide-map-pin text-primary"></i>
-                </div>
-                <div>
-                  <h4 class="font-medium">Location</h4>
-                  <p class="text-muted">
-                    Nairobi, Kenya
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="animate-slide-up">
+          <p class="text-primary font-medium mb-3">FULL-STACK DEVELOPER & UI/UX DESIGNER</p>
+          <h1 class="text-4xl md:text-6xl font-bold mb-6">Building Digital <span class="text-primary">Products</span> With Purpose</h1>
+          <p class="text-lg text-muted-foreground mb-8">
+            I create secure, user-centered digital solutions that help businesses grow, innovate, and navigate the increasingly complex digital landscape.
+          </p>
           
-          <div class="mt-8 pt-8 border-t border-primary/20">
-            <h4 class="font-medium mb-3">Follow Me</h4>
-            <div class="social-links">
-              <a href="https://github.com/Alphonseaaron" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="lucide-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/aaronmumbo" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="lucide-linkedin"></i>
-              </a>
-              <a href="mailto:alphonsemumbo@gmail.com" class="social-link">
-                <i class="lucide-mail"></i>
-              </a>
-              <a href="https://api.whatsapp.com/send?phone=254721119332" target="_blank" rel="noopener noreferrer" class="social-link">
-                <i class="lucide-message-square"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="lg:col-span-3 animate-on-scroll">
-        <div class="glass p-8 rounded-xl">
-          <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
-          
-          <div id="form-status" class="mb-6 p-4 rounded-lg hidden"></div>
-          
-          <form id="contact-form" onsubmit="handleContactSubmit(event)">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label for="name" class="block text-sm font-medium mb-2">
-                  Your Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  placeholder="John Doe"
-                  required
-                />
-              </div>
-              
-              <div>
-                <label for="email" class="block text-sm font-medium mb-2">
-                  Your Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  placeholder="john@example.com"
-                  required
-                />
-              </div>
-            </div>
-            
-            <div class="mb-6">
-              <label for="subject" class="block text-sm font-medium mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                placeholder="Project Inquiry"
-              />
-            </div>
-            
-            <div class="mb-6">
-              <label for="message" class="block text-sm font-medium mb-2">
-                Your Message *
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                placeholder="Tell me about your project..."
-                required
-              ></textarea>
-            </div>
-            
-            <button
-              type="submit"
-              class="flex items-center justify-center bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
-            >
-              Send Message
-              <i class="lucide-send ml-2" style="font-size: 16px"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  // Testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      name: "James Mwangi",
-      role: "CEO",
-      company: "TechFlow Solutions",
-      content: "Working with this developer on our e-wallet system was exceptional. Their attention to security details and user experience transformed our product. The AI-driven fraud detection they implemented has significantly reduced financial risks for our company.",
-      avatar: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=400&h=400&fit=crop"
-    },
-    {
-      id: 2,
-      name: "Sarah Njeri",
-      role: "Product Manager",
-      company: "Urban Living Rentals",
-      content: "The rental management platform developed for us has completely transformed how we operate. Automating our rent collection process alone has saved countless hours of administrative work, and our tenants love the easy-to-use interface.",
-      avatar: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop"
-    },
-    {
-      id: 3,
-      name: "Eugene Odhiambo",
-      role: "Director",
-      company: "ConnectNet ISP",
-      content: "The billing system created for our internet service has increased our revenue by over 50%. The security measures implemented have effectively eliminated unauthorized access issues we were facing. Highly recommend for ISP solutions!",
-      avatar: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&h=400&fit=crop"
-    },
-    {
-      id: 4,
-      name: "Emily Adhiambo",
-      role: "Founder",
-      company: "ChessVS Gaming",
-      content: "The chess betting app exceeded our expectations. From real-time data tracking to secure payment processing, every aspect was thoughtfully designed. User engagement metrics have been outstanding since launch.",
-      avatar: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=400&h=400&fit=crop"
-    }
-  ];
-  
-  // Projects data
-  const projects = [
-    {
-      id: "fintech-wallet",
-      title: "Fintech E-Wallet System",
-      description: "A secure and user-friendly e-wallet system with mobile money integration, allowing users to deposit, transfer, and withdraw funds seamlessly.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      category: "App Development",
-      skills: ["UI/UX", "Flutter", "Firebase", "Payment Integration", "Cybersecurity"]
-    },
-    {
-      id: "real-estate",
-      title: "Real Estate Rental Platform",
-      description: "A comprehensive rental management platform for landlords and tenants with automated rent collection, property listing, and maintenance tracking.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1734&q=80",
-      category: "Web Development",
-      skills: ["FlutterFlow", "Google Maps API", "Firebase", "Multi-platform", "SaaS"]
-    },
-    {
-      id: "isp-billing",
-      title: "ISP Billing & Hotspot Management",
-      description: "An internet billing system allowing users to pay for internet access before connecting, with MikroTik RB951 integration for hotspot authentication.",
-      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      category: "Custom Software",
-      skills: ["MikroTik", "Payment Integration", "Cybersecurity", "User Authentication"]
-    }
-  ];
-  
-  // Setup projects filter and grid
-  function setupProjects() {
-    const filterContainer = document.getElementById('projects-filter');
-    const projectsContainer = document.getElementById('projects-grid');
-    
-    // Get unique categories
-    const categories = ["All", ...new Set(projects.map(project => project.category))];
-    
-    // Add filter buttons
-    categories.forEach(category => {
-      const button = document.createElement('button');
-      button.className = category === "All" 
-        ? "px-4 py-2 rounded-full bg-primary text-white transition-all duration-300" 
-        : "px-4 py-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300";
-      button.textContent = category;
-      button.addEventListener('click', () => filterProjects(category));
-      filterContainer.appendChild(button);
-    });
-    
-    // Add projects
-    renderProjects(projects);
-  }
-  
-  function renderProjects(projectsToRender) {
-    const projectsContainer = document.getElementById('projects-grid');
-    projectsContainer.innerHTML = '';
-    
-    projectsToRender.forEach((project, index) => {
-      const projectCard = document.createElement('div');
-      projectCard.className = 'animate-on-scroll';
-      projectCard.style.animationDelay = `${index * 100}ms`;
-      
-      projectCard.innerHTML = `
-        <div class="glass overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-          <div class="relative h-48 overflow-hidden">
-            <img 
-              src="${project.image}" 
-              alt="${project.title}" 
-              class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-            />
-            <div class="absolute top-4 left-4">
-              <span class="bg-black/30 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs">
-                ${project.category}
-              </span>
-            </div>
-          </div>
-          
-          <div class="p-6">
-            <h3 class="font-bold text-xl mb-2">${project.title}</h3>
-            <p class="text-muted mb-4 line-clamp-2">${project.description}</p>
-            
-            <div class="flex flex-wrap gap-2 mb-4">
-              ${project.skills.slice(0, 3).map(skill => `
-                <span class="bg-primary/10 text-primary text-xs px-2 py-1 rounded-full">
-                  ${skill}
-                </span>
-              `).join('')}
-            </div>
-            
+          <div class="flex flex-wrap gap-4">
             <a 
-              href="/project/${project.id}" 
-              onclick="navigateTo('/project/${project.id}'); return false;" 
-              class="text-primary font-medium hover:underline flex items-center"
+              href="/projects" 
+              onclick="navigateTo('/projects'); return false;" 
+              class="btn btn-primary"
             >
-              View Case Study
-              <i class="lucide-arrow-right ml-1"></i>
+              View My Work
+            </a>
+            <a 
+              href="/contact" 
+              onclick="navigateTo('/contact'); return false;" 
+              class="px-6 py-3 border border-border rounded-full hover:bg-secondary/50 transition-colors"
+            >
+              Contact Me
             </a>
           </div>
         </div>
-      `;
+        
+        <div class="flex justify-center lg:justify-end animate-fade-in delay-300">
+          <div class="max-w-md relative">
+            <div class="relative z-10">
+              <img 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" 
+                alt="Alphonse Aaron" 
+                class="rounded-2xl w-full object-cover"
+              />
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-2xl -z-10"></div>
+            <div class="absolute -top-6 -left-6 w-32 h-32 border-2 border-primary/20 rounded-2xl -z-10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-secondary/30">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-primary font-medium mb-3">SERVICES</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What I Do Best</h2>
+        <p class="text-muted-foreground max-w-3xl mx-auto">
+          I offer comprehensive solutions to help businesses establish and enhance their digital presence through cutting-edge technologies and user-centered design practices.
+        </p>
+      </div>
       
-      projectsContainer.appendChild(projectCard);
-    });
-    
-    // Re-initialize animations
-    initializeAnimations();
-  }
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 100ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-layout text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">UI/UX Design</h3>
+          <p class="text-muted-foreground mb-6">
+            Creating intuitive and engaging user experiences through research-driven design that prioritizes usability and aesthetic appeal.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>User Research & Personas</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Wireframing & Prototyping</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Usability Testing</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 200ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-code text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Web Development</h3>
+          <p class="text-muted-foreground mb-6">
+            Building responsive, high-performance websites and web applications using modern frameworks and best practices.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Frontend Development</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Backend Development</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>API Integration</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 300ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-smartphone text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">App Development</h3>
+          <p class="text-muted-foreground mb-6">
+            Developing native and cross-platform mobile applications that deliver seamless experiences across all devices.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Flutter Development</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Native iOS & Android</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>App Store Optimization</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service Card 4 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 400ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-shield text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Cybersecurity</h3>
+          <p class="text-muted-foreground mb-6">
+            Implementing robust security measures to protect digital assets from threats and vulnerabilities.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Security Audits</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Vulnerability Assessments</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Security Hardening</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service Card 5 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 500ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-database text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Database Management</h3>
+          <p class="text-muted-foreground mb-6">
+            Designing efficient database structures and implementing systems that ensure data integrity and performance.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Database Architecture</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Query Optimization</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Data Migration</span>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Service Card 6 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 600ms">
+          <div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-6">
+            <i class="lucide-settings text-primary" style="font-size: 24px"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">DevOps & Deployment</h3>
+          <p class="text-muted-foreground mb-6">
+            Streamlining development workflows and setting up automated deployment pipelines for efficient operations.
+          </p>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>CI/CD Implementation</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Server Configuration</span>
+            </li>
+            <li class="flex items-center">
+              <i class="lucide-check text-primary mr-2"></i>
+              <span>Performance Optimization</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
   
-  function filterProjects(category) {
-    // Update active filter button
-    const filterButtons = document.querySelectorAll('#projects-filter button');
-    filterButtons.forEach(button => {
-      if (button.textContent === category) {
-        button.className = "px-4 py-2 rounded-full bg-primary text-white transition-all duration-300";
-      } else {
-        button.className = "px-4 py-2 rounded-full bg-white/50 hover:bg-white/80 transition-all duration-300";
-      }
-    });
-    
-    // Filter projects
-    if (category === "All") {
-      renderProjects(projects);
-    } else {
-      const filteredProjects = projects.filter(project => project.category === category);
-      renderProjects(filteredProjects);
-    }
-  }
+  <!-- Projects Preview Section -->
+  <section id="projects-preview" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-primary font-medium mb-3">FEATURED WORK</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Recent Projects</h2>
+        <p class="text-muted-foreground max-w-3xl mx-auto">
+          Explore a selection of my recent projects showcasing my expertise in UI/UX design, web development, and mobile app development.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <!-- Featured Project 1 -->
+        <div class="group animate-on-scroll">
+          <div class="glass overflow-hidden rounded-xl hoverable">
+            <div class="relative aspect-video overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+                alt="Fintech E-Wallet System" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+              <div class="absolute top-4 left-4">
+                <span class="bg-primary/80 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  App Development
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Fintech E-Wallet System</h3>
+              <p class="text-muted mb-4 line-clamp-2">
+                A secure and user-friendly e-wallet system with mobile money integration, allowing users to deposit, transfer, and withdraw funds seamlessly.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">UI/UX</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">Flutter</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">Firebase</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">+2 more</span>
+              </div>
+              
+              <div class="flex justify-between items-center">
+                <a 
+                  href="/project/fintech-wallet" 
+                  onclick="navigateTo('/project/fintech-wallet'); return false;" 
+                  class="flex items-center text-primary group-hover:underline"
+                >
+                  View Case Study
+                  <i class="lucide-arrow-right ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Featured Project 2 -->
+        <div class="group animate-on-scroll" style="animation-delay: 100ms">
+          <div class="glass overflow-hidden rounded-xl hoverable">
+            <div class="relative aspect-video overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1734&q=80" 
+                alt="Real Estate Rental Platform" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+              <div class="absolute top-4 left-4">
+                <span class="bg-primary/80 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Web Development
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Real Estate Rental Platform</h3>
+              <p class="text-muted mb-4 line-clamp-2">
+                A comprehensive rental management platform for landlords and tenants with automated rent collection, property listing, and maintenance tracking.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">FlutterFlow</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">Google Maps API</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">+3 more</span>
+              </div>
+              
+              <div class="flex justify-between items-center">
+                <a 
+                  href="/project/real-estate" 
+                  onclick="navigateTo('/project/real-estate'); return false;" 
+                  class="flex items-center text-primary group-hover:underline"
+                >
+                  View Case Study
+                  <i class="lucide-arrow-right ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Featured Project 3 -->
+        <div class="group animate-on-scroll" style="animation-delay: 200ms">
+          <div class="glass overflow-hidden rounded-xl hoverable">
+            <div class="relative aspect-video overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
+                alt="ISP Billing & Hotspot Management" 
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-80" />
+              <div class="absolute top-4 left-4">
+                <span class="bg-primary/80 text-white text-xs font-medium px-3 py-1 rounded-full">
+                  Custom Software
+                </span>
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">ISP Billing System</h3>
+              <p class="text-muted mb-4 line-clamp-2">
+                An internet billing system allowing users to pay for internet access before connecting, with MikroTik RB951 integration for hotspot authentication.
+              </p>
+              
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">MikroTik</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">Payment Integration</span>
+                <span class="text-xs bg-secondary px-2 py-1 rounded-full">+2 more</span>
+              </div>
+              
+              <div class="flex justify-between items-center">
+                <a 
+                  href="/project/isp-billing" 
+                  onclick="navigateTo('/project/isp-billing'); return false;" 
+                  class="flex items-center text-primary group-hover:underline"
+                >
+                  View Case Study
+                  <i class="lucide-arrow-right ml-1 transition-transform duration-300 group-hover:translate-x-1"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center animate-on-scroll">
+        <a 
+          href="/projects" 
+          onclick="navigateTo('/projects'); return false;" 
+          class="btn btn-primary"
+        >
+          View All Projects
+        </a>
+      </div>
+    </div>
+  </section>
   
-  // Handle form submission
-  function handleContactSubmit(event) {
-    event.preventDefault();
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-secondary/30 relative overflow-hidden">
+    <!-- Background elements -->
+    <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/20 rounded-full custom-blur animate-pulse-slow"></div>
+    <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-400/20 rounded-full custom-blur animate-pulse-slow" style="animation-delay: 1.5s"></div>
     
-    const formData = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      subject: document.getElementById('subject').value,
-      message: document.getElementById('message').value
-    };
-    
-    const statusElement = document.getElementById('form-status');
-    
-    // Validate form
-    if (!formData.name || !formData.email || !formData.message) {
-      statusElement.textContent = "Please fill all required fields.";
-      statusElement.className = "mb-6 p-4 rounded-lg bg-red-100 text-red-800";
-      statusElement.classList.remove('hidden');
-      return;
-    }
-    
-    // In a real implementation, you would send the form data to a server here
-    // For now, let's simulate a successful submission
-    
-    statusElement.textContent = "Your message has been sent successfully! I'll get back to you soon.";
-    statusElement.className = "mb-6 p-4 rounded-lg bg-green-100 text-green-800";
-    statusElement.classList.remove('hidden');
-    
-    // Reset form
-    document.getElementById('contact-form').reset();
-    
-    // Hide status message after 5 seconds
-    setTimeout(() => {
-      statusElement.classList.add('hidden');
-    }, 5000);
-  }
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-primary font-medium mb-3">TESTIMONIALS</p>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What Clients Say</h2>
+        <p class="text-muted-foreground max-w-3xl mx-auto">
+          Feedback from clients I've worked with on various projects across different industries.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- Testimonial 1 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll">
+          <div class="flex gap-4 mb-6">
+            <div class="text-primary">
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+            </div>
+          </div>
+          
+          <blockquote class="text-lg italic mb-6">
+            "Alphonse delivered an exceptional e-commerce platform that exceeded our expectations. His attention to detail and focus on user experience has significantly improved our conversion rates."
+          </blockquote>
+          
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img 
+                src="https://randomuser.me/api/portraits/men/32.jpg" 
+                alt="Client" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold">David Muthoni</p>
+              <p class="text-muted text-sm">CEO, ShopKe Ltd</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 100ms">
+          <div class="flex gap-4 mb-6">
+            <div class="text-primary">
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+            </div>
+          </div>
+          
+          <blockquote class="text-lg italic mb-6">
+            "Working with Alphonse was a game-changer for our startup. His technical expertise and strategic insights helped us build a scalable platform that continues to evolve with our business needs."
+          </blockquote>
+          
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img 
+                src="https://randomuser.me/api/portraits/women/44.jpg" 
+                alt="Client" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold">Sarah Kimani</p>
+              <p class="text-muted text-sm">Founder, TechHub Kenya</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 200ms">
+          <div class="flex gap-4 mb-6">
+            <div class="text-primary">
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+            </div>
+          </div>
+          
+          <blockquote class="text-lg italic mb-6">
+            "The cybersecurity audit Alphonse conducted for our financial institution was thorough and insightful. He identified critical vulnerabilities and provided practical solutions that have significantly enhanced our security posture."
+          </blockquote>
+          
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img 
+                src="https://randomuser.me/api/portraits/men/67.jpg" 
+                alt="Client" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold">James Omondi</p>
+              <p class="text-muted text-sm">CTO, Savannah Bank</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial 4 -->
+        <div class="glass p-6 rounded-xl animate-on-scroll" style="animation-delay: 300ms">
+          <div class="flex gap-4 mb-6">
+            <div class="text-primary">
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+              <i class="lucide-star-filled"></i>
+            </div>
+          </div>
+          
+          <blockquote class="text-lg italic mb-6">
+            "Alphonse developed a mobile app for our healthcare service that has revolutionized how we interact with patients. His understanding of both technology and user needs resulted in an intuitive application that our users love."
+          </blockquote>
+          
+          <div class="flex items-center">
+            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <img 
+                src="https://randomuser.me/api/portraits/women/28.jpg" 
+                alt="Client" 
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p class="font-semibold">Elizabeth Njeri</p>
+              <p class="text-muted text-sm">Director, MediCare Plus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
-  // Initialize projects
-  setupProjects();
-  
-  // Handle scroll indicator
-  window.addEventListener('scroll', function() {
-    const scrollIndicator = document.getElementById('scroll-indicator');
-    if (window.scrollY > 100) {
-      scrollIndicator.style.opacity = '0';
-    } else {
-      scrollIndicator.style.opacity = '1';
-    }
-  });
+  <!-- CTA Section -->
+  <section id="cta" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="glass py-12 px-6 md:px-12 rounded-2xl text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-primary/5"></div>
+        <div class="relative z-10 animate-on-scroll">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Bring Your Ideas to Life?</h2>
+          <p class="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Let's collaborate to create innovative digital solutions that drive results for your business.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a 
+              href="/contact" 
+              onclick="navigateTo('/contact'); return false;" 
+              class="btn btn-primary"
+            >
+              Start a Project
+            </a>
+            <a 
+              href="/pricing" 
+              onclick="navigateTo('/pricing'); return false;" 
+              class="px-6 py-3 border border-border rounded-full hover:bg-secondary/50 transition-colors"
+            >
+              View Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Initialize animations
+  initializeAnimations();
 </script>
