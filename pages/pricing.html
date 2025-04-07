@@ -1,0 +1,214 @@
+
+<main class="pt-24 pb-16">
+  <section class="py-10 bg-secondary/30 relative overflow-hidden mb-12">
+    <!-- Gradient orbs -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-primary/20 rounded-full custom-blur animate-pulse-slow"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-400/20 rounded-full custom-blur animate-pulse-slow" style="animation-delay: 1.5s"></div>
+    
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center animate-fade-in">
+        <p class="text-primary font-medium mb-3">PRICING & SERVICES</p>
+        <h1 class="mb-6">Transparent Pricing for Quality Solutions</h1>
+        <p class="text-lg text-muted mb-8 max-w-3xl mx-auto">
+          Choose between AI-accelerated development for faster delivery and cost efficiency, or traditional custom development for maximum flexibility and control.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container mx-auto px-6">
+    <div class="mb-12">
+      <!-- Pricing Table -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" x-data="{ showAnnual: false }">
+        <!-- Tab toggle -->
+        <div class="col-span-full mb-8 flex justify-center">
+          <div class="glass p-1 rounded-full flex">
+            <button @click="showAnnual = false" :class="!showAnnual ? 'bg-primary text-white' : 'hover:bg-primary/10'" class="px-6 py-2 rounded-full transition-all duration-200">
+              Monthly
+            </button>
+            <button @click="showAnnual = true" :class="showAnnual ? 'bg-primary text-white' : 'hover:bg-primary/10'" class="px-6 py-2 rounded-full transition-all duration-200">
+              Annually <span class="text-xs opacity-75">(Save 15%)</span>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Basic Plan -->
+        <div class="glass rounded-xl overflow-hidden flex flex-col">
+          <div class="p-6 bg-primary/5 border-b border-primary/10">
+            <h3 class="text-xl font-bold text-center">Basic</h3>
+            <div class="flex justify-center my-4">
+              <span class="text-4xl font-bold" x-text="showAnnual ? '$399' : '$499'"></span>
+              <span class="text-muted ml-2 self-end mb-1" x-text="showAnnual ? '/year' : '/month'"></span>
+            </div>
+            <p class="text-center text-muted">Essential features for small projects and individuals</p>
+          </div>
+          
+          <div class="p-6 flex-grow">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Up to 3 pages</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Basic responsive design</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Simple contact form</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>1 month of support</span>
+              </li>
+              <li class="flex items-center text-muted">
+                <i class="lucide-x text-muted mr-2"></i>
+                <span>Custom functionality</span>
+              </li>
+              <li class="flex items-center text-muted">
+                <i class="lucide-x text-muted mr-2"></i>
+                <span>Database integration</span>
+              </li>
+              <li class="flex items-center text-muted">
+                <i class="lucide-x text-muted mr-2"></i>
+                <span>User authentication</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="p-6">
+            <button class="w-full py-3 rounded-lg border border-primary text-primary hover:bg-primary/5 transition-colors">
+              Get Started
+            </button>
+          </div>
+        </div>
+        
+        <!-- Standard Plan -->
+        <div class="glass rounded-xl overflow-hidden flex flex-col relative">
+          <div class="absolute top-0 right-0 bg-primary text-white px-4 py-1 rounded-bl-lg text-sm font-medium">
+            Popular
+          </div>
+          <div class="p-6 bg-primary/10 border-b border-primary/20">
+            <h3 class="text-xl font-bold text-center">Standard</h3>
+            <div class="flex justify-center my-4">
+              <span class="text-4xl font-bold" x-text="showAnnual ? '$849' : '$999'"></span>
+              <span class="text-muted ml-2 self-end mb-1" x-text="showAnnual ? '/year' : '/month'"></span>
+            </div>
+            <p class="text-center text-muted">Comprehensive solution for growing businesses</p>
+          </div>
+          
+          <div class="p-6 flex-grow">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Up to 7 pages</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Advanced responsive design</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Contact form with file upload</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>3 months of support</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Basic custom functionality</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Simple database integration</span>
+              </li>
+              <li class="flex items-center text-muted">
+                <i class="lucide-x text-muted mr-2"></i>
+                <span>User authentication</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="p-6">
+            <button class="w-full py-3 rounded-lg bg-primary text-white hover:bg-primary/90 transition-colors">
+              Get Started
+            </button>
+          </div>
+        </div>
+        
+        <!-- Premium Plan -->
+        <div class="glass rounded-xl overflow-hidden flex flex-col">
+          <div class="p-6 bg-primary/5 border-b border-primary/10">
+            <h3 class="text-xl font-bold text-center">Premium</h3>
+            <div class="flex justify-center my-4">
+              <span class="text-4xl font-bold" x-text="showAnnual ? '$1,699' : '$1,999'"></span>
+              <span class="text-muted ml-2 self-end mb-1" x-text="showAnnual ? '/year' : '/month'"></span>
+            </div>
+            <p class="text-center text-muted">Complete solution for enterprise requirements</p>
+          </div>
+          
+          <div class="p-6 flex-grow">
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Unlimited pages</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Premium responsive design</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Advanced contact form with automation</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>6 months of support</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Advanced custom functionality</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>Advanced database integration</span>
+              </li>
+              <li class="flex items-center">
+                <i class="lucide-check text-primary mr-2"></i>
+                <span>User authentication & permission levels</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="p-6">
+            <button class="w-full py-3 rounded-lg border border-primary text-primary hover:bg-primary/5 transition-colors">
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h2>
+      <p class="text-muted mb-8 max-w-2xl mx-auto">
+        Let's discuss your project requirements and find the perfect solution that fits your needs and budget.
+      </p>
+      <a 
+        href="https://api.whatsapp.com/send?phone=254721119332"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-all"
+      >
+        <i class="lucide-message-square"></i>
+        Get Started
+      </a>
+    </div>
+  </div>
+</main>
+
+<script>
+  // Initialize animations
+  initializeAnimations();
+</script>

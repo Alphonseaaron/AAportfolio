@@ -1,0 +1,203 @@
+
+<main class="pt-24 pb-16">
+  <div class="container mx-auto px-6 mb-12">
+    <div class="text-center animate-fade-in">
+      <p class="text-primary font-medium mb-3">GET IN TOUCH</p>
+      <h1 class="mb-6">Let's Work Together</h1>
+      <p class="text-lg text-muted mb-8 max-w-3xl mx-auto">
+        Have a project in mind or need a consultation? I'm excited to hear about your ideas and how we can collaborate to bring them to life.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+        <div class="lg:col-span-2 animate-on-scroll">
+          <div class="glass p-8 rounded-xl h-full flex flex-col justify-between">
+            <div>
+              <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+              <p class="text-muted mb-8">
+                Feel free to reach out through any of these channels. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+              </p>
+              
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                    <i class="lucide-mail text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Email</h4>
+                    <a href="mailto:alphonsemumbo@gmail.com" class="text-muted hover:text-primary">
+                      alphonsemumbo@gmail.com
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                    <i class="lucide-message-square text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">WhatsApp</h4>
+                    <a href="https://api.whatsapp.com/send?phone=254721119332" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary">
+                      +254 721 119 332
+                    </a>
+                  </div>
+                </div>
+                
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-lg mr-4">
+                    <i class="lucide-map-pin text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium">Location</h4>
+                    <p class="text-muted">
+                      Nairobi, Kenya
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-primary/20">
+              <h4 class="font-medium mb-3">Follow Me</h4>
+              <div class="social-links">
+                <a href="https://github.com/Alphonseaaron" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="lucide-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aaronmumbo" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="lucide-linkedin"></i>
+                </a>
+                <a href="mailto:alphonsemumbo@gmail.com" class="social-link">
+                  <i class="lucide-mail"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=254721119332" target="_blank" rel="noopener noreferrer" class="social-link">
+                  <i class="lucide-message-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:col-span-3 animate-on-scroll">
+          <div class="glass p-8 rounded-xl">
+            <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+            
+            <div id="form-status" class="mb-6 p-4 rounded-lg hidden"></div>
+            
+            <form id="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label for="name" class="block text-sm font-medium mb-2">
+                    Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="John Doe"
+                    required
+                  />
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium mb-2">
+                    Your Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                    placeholder="john@example.com"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div class="mb-6">
+                <label for="subject" class="block text-sm font-medium mb-2">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  placeholder="Project Inquiry"
+                />
+              </div>
+              
+              <div class="mb-6">
+                <label for="message" class="block text-sm font-medium mb-2">
+                  Your Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-lg border border-border bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
+                  placeholder="Tell me about your project..."
+                  required
+                ></textarea>
+              </div>
+              
+              <button
+                type="submit"
+                class="flex items-center justify-center bg-primary text-white px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
+              >
+                Send Message
+                <i class="lucide-send ml-2" style="font-size: 16px"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  // Handle form submission
+  function handleContactSubmit(event) {
+    event.preventDefault();
+    
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value
+    };
+    
+    const statusElement = document.getElementById('form-status');
+    
+    // Validate form
+    if (!formData.name || !formData.email || !formData.message) {
+      statusElement.textContent = "Please fill all required fields.";
+      statusElement.className = "mb-6 p-4 rounded-lg bg-red-100 text-red-800";
+      statusElement.classList.remove('hidden');
+      return;
+    }
+    
+    // In a real implementation, you would send the form data to a server here
+    // For now, let's simulate a successful submission
+    
+    statusElement.textContent = "Your message has been sent successfully! I'll get back to you soon.";
+    statusElement.className = "mb-6 p-4 rounded-lg bg-green-100 text-green-800";
+    statusElement.classList.remove('hidden');
+    
+    // Reset form
+    document.getElementById('contact-form').reset();
+    
+    // Hide status message after 5 seconds
+    setTimeout(() => {
+      statusElement.classList.add('hidden');
+    }, 5000);
+  }
+  
+  // Initialize animations
+  initializeAnimations();
+</script>
